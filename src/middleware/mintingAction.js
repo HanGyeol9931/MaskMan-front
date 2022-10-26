@@ -7,7 +7,7 @@ function minting(nickname,point,minting_id,setOpen,open){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://43.201.104.13:8000/minting",
+            url:"http://43.201.104.136:8000/minting",
             data :{
                 nickname,point,minting_id
             }
