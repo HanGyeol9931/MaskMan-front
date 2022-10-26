@@ -1,0 +1,53 @@
+/* 헤더 스타일 */
+html,body,#root,.App,button,input,textarea{
+  height: 100%;
+  font-family: 'Galmuri11';
+  font-weight: bold;
+  
+}
+input:focus,textarea:focus{
+  outline: none;
+}
+.header{
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(253, 104, 87);
+  height: 80px;
+  border-bottom: 10px dotted;
+}
+.headerMenu{
+  display: flex;
+  min-width: 600px;
+  justify-content: space-between;
+}
+.headerTitle{
+  min-width: 240px;
+  display: flex;
+  align-items: center;
+}
+.bnt{
+  margin: 0 20px;
+}
+.headerMenuContents:hover,.bnt:hover{
+  color: white;
+}
+.login{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 300px;
+  margin-right: 10px;
+}
+.userPoint{
+  font-size: 15px;
+}
+img{
+  width: 150px;
+  margin: 0;
+}
+.headerTitle img{
+  width: 100px
+}
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');

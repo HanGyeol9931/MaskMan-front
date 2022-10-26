@@ -1,0 +1,146 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* transform: translate(-50%,-50%); */
+    bottom: 0;
+    width: 100%;
+    /* height: 100%; */
+    background-size: cover;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+  }
+  .modal.openModal {
+    display: flex;
+    align-items: center;
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-bg-show 0.3s;
+  }
+  .modal section{
+    padding: 0 30px;
+      font-size: 30px;
+      width: 1000px;
+      border: 5px solid black;
+      border-radius: 20px;
+      /* padding: 10px; */
+      margin: 0 auto;
+      background-color: white;
+  }
+  .modal header{
+      padding: 20px;
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      font-size: 50px;
+      border-bottom: 5px solid black;
+  }
+.modal main{
+    padding: 20px 20px;
+    height: 620px;
+}
+main input{
+    /* border: 0; */
+    border: 5px solid black;
+    font-size: 30px;
+    background-color: transparent;
+    height: 40px;
+    width: 870px;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+main textarea{
+    border: 5px solid black;
+    padding: 10px;
+    font-size: 30px;
+    height: 390px;
+    width: 870px;
+    resize: none;
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+main .flex{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-bottom: 50px;
+}
+main .flex:focus{
+    outline: none;
+}
+  .close:first-child{
+      width:30px;
+  }
+  .modal  section{
+      height: 860px;
+  }
+  .modal > section button{
+    font-size: 30px;
+    position: static;
+    left: 0;
+    bottom: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 65px;
+    background-color:transparent;
+    transition: all 0.5s;
+    border-radius: 8px;
+  }
+  .modal > section button:hover{
+    transform: scale(1.1);
+  }
+  .modal footer{
+    height: 100px;
+  }
+  .modal .mainbox{
+    display: flex;
+    justify-content: center;
+  }
+  .modal .box{
+    border: 5px solid black;
+    width: 100px;
+    margin: 0 20px;
+  }
+  .nft_main{
+    display: flex;
+    align-items: center;
+  }
+  .nft_main img{
+    width: 400px;
+    margin: 0 80px;
+    border-radius: 30px;
+  }
+  .nft_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 407px;
+    border-radius: 10px;
+  }
+  .nft_content{
+    padding: 10px;
+    font-size: 40px;
+  }
+  .minting_main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 500px !important;
+  }
+  .minting_main img{
+    width: 400px;
+    border-radius: 20px;
+  }
+  .minting_content{
+    font-size: 50px;
+  }
+  .minting_section{
+    width: 700px !important;
+    height: 750px !important;
+  }
