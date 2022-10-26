@@ -8,7 +8,7 @@ function borderCreate(nickname,img,title,content,back){
     return async(dispatch,getState)=>{
         await axios({
             method : "post",
-            url:"http://192.168.0.112:8000/bordercreact",
+            url:"http://43.201.104.13:8000/bordercreact",
             data :{
                 nickname,img,title,content
             }
@@ -30,7 +30,7 @@ function borderCount(){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://192.168.0.112:8000/border",
+            url:"http://43.201.104.13:8000/border",
         }).then((e)=>{
             const userData = e.data
             dispatch(Border.border({userData}))
@@ -45,7 +45,7 @@ function borderShow(id){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://192.168.0.112:8000/bordershow",
+            url:"http://43.201.104.13:8000/bordershow",
             data :{
                 id
               } 
@@ -63,7 +63,7 @@ function borderDelete(id){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://192.168.0.112:8000/borderdelete",
+            url:"http://43.201.104.13:8000/borderdelete",
             data :{
                 id
               } 
@@ -81,7 +81,7 @@ function borderUpdate(id,title,content){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://192.168.0.112:8000/borderupdate",
+            url:"http://43.201.104.13:8000/borderupdate",
             data :{
                 id,title,content
               } 
@@ -99,7 +99,7 @@ function replies(borderid,nickname,profil,content){
     return async(dispatch,getState)=>{
         await axios({
             method : "post",
-            url:"http://192.168.0.112:8000/replie",
+            url:"http://43.201.104.13:8000/replie",
             data :{
                 borderid,nickname,profil,content
               } 
@@ -116,7 +116,7 @@ function repliesShow(borderid){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://192.168.0.112:8000/replieshow",
+            url:"http://43.201.104.13:8000/replieshow",
             data :{
                 borderid
               } 
@@ -134,7 +134,7 @@ function repliesDelete(replies_id,border_id){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://192.168.0.112:8000/repliesdelete",
+            url:"http://43.201.104.13:8000/repliesdelete",
             data :{
                 replies_id,border_id
               } 
@@ -152,7 +152,7 @@ function repliesUpdate(replies_id,border_id,content){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://192.168.0.112:8000/repliesupdate",
+            url:"http://43.201.104.13:8000/repliesupdate",
             data :{
                 replies_id,border_id,content
               } 
