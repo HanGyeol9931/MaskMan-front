@@ -18,7 +18,6 @@ function minting(nickname,point,minting_id,setOpen,open){
             const mynft = e.data.mynft
             const userData = e.data.user
             const data = true
-            console.log("액션 실행");
             swal("민팅성공!","NFT 페이지를 통해 확인해주세요")
             .then(()=>{
                 dispatch(Nft.nft({nft}))

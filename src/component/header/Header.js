@@ -5,9 +5,6 @@ import main from '../../images/main.png'
 import { Login } from '../../redux/reducer/login';
 
 const Header = () => {
-  useEffect(()=>{
-    console.log("여긴 헤더");
-  })
   const nav = useNavigate()
   const login = useSelector(state=>state.login)
  

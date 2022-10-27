@@ -21,9 +21,6 @@ const Minting = () => {
     }
     setRandom(num)
   },[])
-  useEffect(()=>{
-    console.log("여긴 민팅",modalOpen);
-  })
   const [list,setList] = useState(true)
 
   const Normal = ()=>{
@@ -38,7 +35,6 @@ const Minting = () => {
         if(e){
           setList(true)
           setModalOpen(true);
-          // console.log(modalOpen);
         }
       });
     }
@@ -55,7 +51,6 @@ const Minting = () => {
         if(e){
           setList(false)
           setModalOpen(true);
-          console.log((modalOpen));
         }
       });
     }

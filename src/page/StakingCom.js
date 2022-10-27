@@ -31,7 +31,6 @@ const StakingCom = (props) => {
               })
         }
     }
-    console.log()
   return (
     <div className="shop_img" onClick={click}>
         <img src={img} alt="" />

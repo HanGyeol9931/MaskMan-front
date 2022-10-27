@@ -6,9 +6,6 @@ import AdminCom from './AdminCom'
 
 const Admin = () => {
     const users = useSelector(state=>state.users.users)
-    console.log(users);
-    
-    
   return (
     <Background>
         <div className='shop_body'>

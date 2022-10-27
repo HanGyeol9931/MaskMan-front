@@ -36,7 +36,6 @@ function borderCount(){
             dispatch(Border.border({userData}))
         }).catch((err)=>{
             console.log(err)
-            console.log(user.data)
             swal("안내","실패")
         })
     }
@@ -54,7 +53,6 @@ function borderShow(id){
             dispatch(Show.show({userData}))
         }).catch((err)=>{
             console.log(err)
-            console.log(user.data)
             swal("안내","실패")
         })
     }
@@ -72,7 +70,6 @@ function borderDelete(id){
             dispatch(Show.show({userData}))
         }).catch((err)=>{
             console.log(err)
-            console.log(user.data)
             swal("안내","실패")
         })
     }
@@ -90,7 +87,6 @@ function borderUpdate(id,title,content){
             dispatch(Show.show({userData}))
         }).catch((err)=>{
             console.log(err)
-            console.log(user.data)
             swal("안내","실패")
         })
     }
@@ -125,7 +121,6 @@ function repliesShow(borderid){
             dispatch(Replie.replie({userData}))
         }).catch((err)=>{
             console.log(err)
-            console.log(user.data)
             swal("안내","실패")
         })
     }
@@ -162,7 +157,6 @@ function repliesUpdate(replies_id,border_id,content){
             swal("안내","수정 완료")
         }).catch((err)=>{
             console.log(err)
-            console.log(user.data)
             swal("안내","실패")
         })
     }

@@ -14,7 +14,6 @@ const dispatch = useDispatch()
   document.onclick = (e)=>{
     if(e.target.className === "openModal modal"){
         close()
-        console.log("실행");
     }
   }
   

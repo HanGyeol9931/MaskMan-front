@@ -7,7 +7,6 @@ const Bordercontent = (props) => {
     const a = props.date.split(" ")
     if(a[0].includes("2022")){
         a.splice(1,1)
-        // console.log(a)
     }
 
 

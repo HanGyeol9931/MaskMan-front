@@ -30,7 +30,6 @@ const Nft = () => {
   const numoffset = (numpage - 1) * numlimit;
   const nftArray = []
   const choice = (e)=>{
-    console.log(e.target.innerHTML)
     setPage(Number(e.target.innerHTML))
   }
   const numUp = ()=>{

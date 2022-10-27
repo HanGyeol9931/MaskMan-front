@@ -4,6 +4,7 @@ import { Background,FlexA,FlexB,FlexC,FlexContent,Button,MypageContent,MypageImg
 import Dimg from "../images/Dimg.png"
 import { useNavigate } from 'react-router-dom'
 import { nftAction } from '../middleware/nftAction'
+import swal from "swal"
 
 
 const Mypage = () => {
@@ -15,11 +16,9 @@ const Mypage = () => {
 const fileInput = useRef(null)
 const onChange = (e) => {
 	if(e.target.files[0]){
-          console.log(e.target.files[0])
           const formData = new FormData();
           formData.append('files',e.target.files[0])
           formData.append('nickname', user.nickname);
-          console.log(formData);
           setData(formData)
         }else{ //업로드 취소할 시
             setImage(user.img)
@@ -35,7 +34,9 @@ const onChange = (e) => {
         reader.readAsDataURL(e.target.files[0])
     }
 const Click = ()=>{
-  dispatch(nftAction.imgUpload(user.nickname,Data,config))
+  dispatch(nftAction.imgUpload(user.nickname,Data,config)).then(()=>{
+    swal("안내","프로필 변경 되었습니다")
+  })
 }
 
     const nav = useNavigate()

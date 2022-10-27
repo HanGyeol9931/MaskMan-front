@@ -33,12 +33,10 @@ function nftSell(price,img,name,nickname,user_profil){
                 price,img,name,nickname,user_profil
             }
         }).then((e)=>{
-            console.log(e.data.nftsell);
             const nftsell= e.data.nftsell
             const mynft = e.data.mynft
             dispatch(Nft.nftsell({nftsell}))
             dispatch(Nft.mynft({mynft}))
-            swal("성공")
             
         }).catch((err)=>{
             swal("안내","실패").then(()=>{
@@ -56,7 +54,6 @@ function nftBuy(id,price,name,nickname,writer){
                 id,price,name,nickname,writer
             }
         }).then((e)=>{
-            // console.log(e.data.nftsell);
             const nftsell= e.data.nftsell
             const nft= e.data.nft
             const mynft = e.data.mynft
@@ -107,7 +104,6 @@ function nftNonstaking(name,nickname){
             const mynft = e.data.mynft
             const data = true
             const userData = e.data.user
-            console.log("실행");
             dispatch(Login.login({data,userData}))
             dispatch(Nft.mynft({mynft}))
             swal("성공")
@@ -158,7 +154,6 @@ function stakingPoint(nickname,stakingpoint,userpoint){
     }
 }
 function imgUpload(nickname,formData,config){
-    // console.log(nickname,formData,config);
     return async(dispatch,getState)=>{
         await  axios({
             method: 'post',

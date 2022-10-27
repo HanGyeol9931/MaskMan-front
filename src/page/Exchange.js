@@ -7,7 +7,6 @@ const Exchange = () => {
   const nav = useNavigate()
   const login = useSelector(state => state.login)
   const nftsell = useSelector(state => state.nft.nftsell)
-  console.log(nftsell);
 
   return (
     <Background>
