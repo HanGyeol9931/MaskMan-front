@@ -4,7 +4,7 @@ import { Background,FlexA,FlexB,FlexC,FlexContent,Button,MypageContent,MypageImg
 import Dimg from "../images/Dimg.png"
 import { useNavigate } from 'react-router-dom'
 import { nftAction } from '../middleware/nftAction'
-import swal from "swal"
+import swal from "sweetalert"
 
 
 const Mypage = () => {
