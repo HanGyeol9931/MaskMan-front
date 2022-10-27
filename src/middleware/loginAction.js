@@ -7,7 +7,7 @@ function login(id,pw){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://43.201.104.136:8000/login",
+            url:"http://43.201.104.136/login",
             data :{
                 id,pw
             }
@@ -29,7 +29,7 @@ function signUp(id,pw,nickname,meg){
         const user = await axios({
             withCredentials: true,
             method : "post",
-            url:"http://43.201.104.136:8000/signup",
+            url:"http://43.201.104.136/signup",
             data :{
                 id,pw,nickname
             }
