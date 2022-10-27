@@ -34,7 +34,7 @@ const onChange = (e) => {
         reader.readAsDataURL(e.target.files[0])
     }
 const Click = ()=>{
-  dispatch(nftAction.imgUpload(user.nickname,Data,config)).then(()=>{
+  dispatch(nftAction.imgUpload(Data,config)).then(()=>{
     swal("안내","프로필 변경 되었습니다")
   })
 }

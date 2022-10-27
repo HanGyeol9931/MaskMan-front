@@ -25,8 +25,8 @@ const SignUp = () => {
             <Title>회원가입</Title>
             <Label>아이디</Label>
             <Input ref={id}></Input>
-            <Label>비밀번호</Label>
-            <Input ref={pw}></Input>
+            <Label >비밀번호</Label>
+            <Input type ="password" ref={pw}></Input>
             <Label>닉네임</Label>
             <Input ref={nickname}></Input>
             <div>

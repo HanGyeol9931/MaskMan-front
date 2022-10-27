@@ -153,7 +153,7 @@ function stakingPoint(nickname,stakingpoint,userpoint){
         })
     }
 }
-function imgUpload(nickname,formData,config){
+function imgUpload(formData,config){
     return async(dispatch,getState)=>{
         await  axios({
             method: 'post',
