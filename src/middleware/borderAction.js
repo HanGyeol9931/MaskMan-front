@@ -8,7 +8,7 @@ function borderCreate(nickname,img,title,content,back){
     return async(dispatch,getState)=>{
         await axios({
             method : "post",
-            url:"http://52.78.111.36 /bordercreact",
+            url:"http://52.78.111.36/bordercreact",
             data :{
                 nickname,img,title,content
             }
@@ -30,7 +30,7 @@ function borderCount(){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://52.78.111.36 /border",
+            url:"http://52.78.111.36/border",
         }).then((e)=>{
             const userData = e.data
             dispatch(Border.border({userData}))
@@ -44,7 +44,7 @@ function borderShow(id){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://52.78.111.36 /bordershow",
+            url:"http://52.78.111.36/bordershow",
             data :{
                 id
               } 
@@ -61,7 +61,7 @@ function borderDelete(id){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://52.78.111.36 /borderdelete",
+            url:"http://52.78.111.36/borderdelete",
             data :{
                 id
               } 
@@ -78,7 +78,7 @@ function borderUpdate(id,title,content){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://52.78.111.36 /borderupdate",
+            url:"http://52.78.111.36/borderupdate",
             data :{
                 id,title,content
               } 
@@ -95,7 +95,7 @@ function replies(borderid,nickname,profil,content){
     return async(dispatch,getState)=>{
         await axios({
             method : "post",
-            url:"http://52.78.111.36 /replie",
+            url:"http://52.78.111.36/replie",
             data :{
                 borderid,nickname,profil,content
               } 
@@ -112,7 +112,7 @@ function repliesShow(borderid){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://52.78.111.36 /replieshow",
+            url:"http://52.78.111.36/replieshow",
             data :{
                 borderid
               } 
@@ -129,7 +129,7 @@ function repliesDelete(replies_id,border_id){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://52.78.111.36 /repliesdelete",
+            url:"http://52.78.111.36/repliesdelete",
             data :{
                 replies_id,border_id
               } 
@@ -147,7 +147,7 @@ function repliesUpdate(replies_id,border_id,content){
     return async(dispatch,getState)=>{
         const user = await axios({
             method : "post",
-            url:"http://52.78.111.36 /repliesupdate",
+            url:"http://52.78.111.36/repliesupdate",
             data :{
                 replies_id,border_id,content
               } 

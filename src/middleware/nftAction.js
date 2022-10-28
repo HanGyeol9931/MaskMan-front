@@ -8,7 +8,7 @@ function nftData(){
     return async(dispatch,getState)=>{
         await axios({
             method : "post",
-            url:"http://52.78.111.36 /nft",
+            url:"http://52.78.111.36/nft",
         }).then((e)=>{
             const nft= e.data.nft
             const nftcount= e.data.nftcount
@@ -28,7 +28,7 @@ function nftSell(price,img,name,nickname,user_profil){
     return async(dispatch,getState)=>{
         await axios({
             method : "post",
-            url:"http://52.78.111.36 /nftsell",
+            url:"http://52.78.111.36/nftsell",
             data :{
                 price,img,name,nickname,user_profil
             }
@@ -49,7 +49,7 @@ function nftBuy(id,price,name,nickname,writer){
     return async(dispatch,getState)=>{
         await axios({
             method : "post",
-            url:"http://52.78.111.36 /nftbuy",
+            url:"http://52.78.111.36/nftbuy",
             data :{
                 id,price,name,nickname,writer
             }
@@ -76,7 +76,7 @@ function nftStaking(name,nickname){
     return async(dispatch,getState)=>{
         await axios({
             method : "post",
-            url:"http://52.78.111.36 /nftstaking",
+            url:"http://52.78.111.36/nftstaking",
             data :{
                 name,nickname
             }
@@ -96,7 +96,7 @@ function nftNonstaking(name,nickname){
     return async(dispatch,getState)=>{
         await axios({
             method : "post",
-            url:"http://52.78.111.36 /nftnonstaking",
+            url:"http://52.78.111.36/nftnonstaking",
             data :{
                 name,nickname
             }
@@ -118,7 +118,7 @@ function stakingCheck(nickname){
     return async(dispatch,getState)=>{
         await axios({
             method : "post",
-            url:"http://52.78.111.36 /stakingcheck",
+            url:"http://52.78.111.36/stakingcheck",
             data :{
                nickname
             }
@@ -136,7 +136,7 @@ function stakingPoint(nickname,stakingpoint,userpoint){
     return async(dispatch,getState)=>{
         await axios({
             method : "post",
-            url:"http://52.78.111.36 /stakingPoint",
+            url:"http://52.78.111.36/stakingPoint",
             data :{
                nickname,stakingpoint,userpoint
             }
@@ -157,7 +157,7 @@ function imgUpload(formData,config){
     return async(dispatch,getState)=>{
         await  axios({
             method: 'post',
-            url: 'http://52.78.111.36 /imgupload',
+            url: 'http://52.78.111.36/imgupload',
             data: formData,config
           }).then((e) => {
             const userData = e.data.user
@@ -172,7 +172,7 @@ function usersData(){
     return async(dispatch,getState)=>{
         await  axios({
             method: 'post',
-            url: 'http://52.78.111.36 /usersdata'
+            url: 'http://52.78.111.36/usersdata'
           }).then((e) => {
             const users = e.data.users
             dispatch(Users.users({users}))
@@ -185,7 +185,7 @@ function usersChange(nickname,type){
     return async(dispatch,getState)=>{
         await  axios({
             method: 'post',
-            url: 'http://52.78.111.36 /userschange',
+            url: 'http://52.78.111.36/userschange',
             data : {nickname,type}
           }).then((e) => {
             const users = e.data.users
