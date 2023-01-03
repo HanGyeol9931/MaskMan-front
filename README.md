@@ -71,7 +71,7 @@
 ## 주요 페이지
 
 
-### **MainPage**
+### **Main Page**
 
 <br/>
 
